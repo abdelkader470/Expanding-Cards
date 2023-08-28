@@ -27,7 +27,7 @@ body{
     flex: 0.5;
     color: white;
     cursor: pointer;
-    transition: flex 0.7 ease-in;
+    transition: flex 0.7s ease-in;
 }
 .panel h3 {
     position: absolute;
@@ -42,9 +42,10 @@ body{
 } 
 .panel.active h3{
     opacity: 1;
+    transition: opacity .3s ease-in .4s;
 }
 
-@media(max-width:480px){
+@media (max-width:400px){
     .container{
         width: 100vw;
     }
